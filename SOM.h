@@ -49,7 +49,7 @@ private:
 
     void computeDistMatrix();
 
-public:
+private:
     const uint m_k;
     const uint m_num;
     const uint m_domain;
