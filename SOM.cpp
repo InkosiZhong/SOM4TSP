@@ -23,7 +23,7 @@ void SOM::initWeight(){
 void SOM::computeDistMatrix(){
     m_distMatrix = (double*)malloc(sizeof(double) * m_num * m_num);
     for (uint i = 0; i < m_num; i++){
-        m_distMatrix[i * m_num + i] = INF;
+        m_distMatrix[i * m_num + i] = 0;
         for (uint j = i + 1; j < m_num; j++){
             m_distMatrix[i * m_num + j] = m_distMatrix[j * m_num + i] = \
                 distanceOf(m_points[i], m_points[j]);
