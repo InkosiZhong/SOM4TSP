@@ -6,11 +6,15 @@ This is a SOM implementation using **C Lib Functions** and **C++ Object Oriented
 
 1. Edit points data in main.cpp - initPoints()
 
-2. ```bash
+2. Compile
+
+   ```bash
    g++ SOM.cpp main.cpp -I SOM.h -o SOM
    ```
 
-3. ```bash
+3. Run
+
+   ```bash
    ./SOM
    ```
 
@@ -26,9 +30,9 @@ you can init by using **Point(X, Y)**
 
 ```c++
 SOM som(NUM_OF_POINTS, PTR_POINT_LIST); // initialization
-som.run(NUM_OF_ITERATIONS); 						// start iteration
-som.getRoute();													// get the best route (readonly)
-som.getRoute(PTR_ROUTE_LIST); 					// copy to new LIST (writable)
-som.getDist();													// get min distance
+som.run(NUM_OF_ITERATIONS); // start iteration
+som.getRoute();	// get the best route (readonly)
+som.getRoute(PTR_ROUTE_LIST); // copy to new LIST (writable)
+som.getDist(); // get min distance
 ```
 
